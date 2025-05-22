@@ -211,7 +211,8 @@ function moveTask(sourceColumnId, targetColumnId, taskId) {
 document.addEventListener('DOMContentLoaded', () => {
   renderColumns();
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js', { scope: './' })
+    navigator.serviceWorker.register('/ToDoList-PWA/sw.js', {
+      scope: '/ToDoList-PWA/'})
       .then(() => console.log('SW зарегистрирован'))
       .catch(err => console.log('Ошибка SW:', err));
   }
