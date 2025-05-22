@@ -1,10 +1,11 @@
-const CACHE_NAME = 'todo-cache-v1';
+const CACHE_NAME = 'pwa-kanban-cache-v1';
 const urlsToCache = [
-  '/ToDoList-PWA/',
-  '/ToDoList-PWA/index.html',
-  '/ToDoList-PWA/css/styles.css',
-  '/ToDoList-PWA/js/app.js',
-  '/ToDoList-PWA/icon-192x192.png'
+  './',
+  './index.html',
+  './styles.css',
+  './app.js',
+  './icon-192x192.png',
+  './icon-512x512.png'
 ];
 self.addEventListener('install', (event) => {
   event.waitUntil(
