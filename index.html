@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Доска задач</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="/ToDoList-PWA/manifest.json">
+  <link rel="stylesheet" href="/ToDoList-PWA/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 <body>
@@ -33,13 +33,13 @@
 
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
-  <script src="app.js"></script>
+  <script src="/ToDoList-PWA/app.js"></script>
   
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js', { scope: './' })
-        .then(() => console.log('SW зарегистрирован'))
-        .catch(err => console.log('Ошибка SW:', err));
+      navigator.serviceWorker.register('/ToDoList-PWA/sw.js', { 
+        scope: '/ToDoList-PWA/' 
+      });
     }
   </script>
 </body>
